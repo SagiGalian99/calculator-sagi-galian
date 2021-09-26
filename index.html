@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="result">
+            <h1 id="result">0</h1>
+        </div>
+        <div class="show">
+            <h1 id="show"></h1>
+        </div>
+        <div class="keys">
+            <div>
+                <button onclick="addNumber('1')">1</button>
+                <button onclick="addNumber('2')">2</button>
+                <button onclick="addNumber('3')">3</button>
+                <button onclick="addNumber('/')" id="cal">/</button>
+            </div>
+            <div>
+                <button onclick="addNumber('4')">4</button>
+                <button onclick="addNumber('5')">5</button>
+                <button onclick="addNumber('6')">6</button>
+                <button onclick="addNumber('x')" id="cal">x</button>
+            </div>
+            <div>
+                <button onclick="addNumber('7')">7</button>
+                <button onclick="addNumber('8')">8</button>
+                <button onclick="addNumber('9')">9</button>
+                <button onclick="addNumber('+')" id="cal">+</button>
+            </div>
+            <div>
+                <button onclick="addNumber('.')">.</button>
+                <button onclick="addNumber('0')">0</button>
+                <button onclick="addNumber('c1')" id="c">c1</button>
+                <button onclick="addNumber('-')" id="cal">-</button>
+            </div>
+            <button onclick="addNumber('c')" id="c">C</button>
+            <button id="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
